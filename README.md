@@ -1,6 +1,6 @@
 # hello_world_flutter 第一个flutter项目（md文件换行只需每行前面打两个空格）
 
-## 获取Flutter SDK[中文教程](https://flutterchina.club/get-started/install/);[官网](https://flutter.io/docs/get-started/install)
+## 获取Flutter SDK[中文教程](https://flutterchina.club/get-started/install/);[官网](https://flutter.io/docs/get-started/install)   [教程课本](https://book.flutterchina.club/)
   1.获取Flutter SDK:https://storage.flutter-io.cn/flutter_infra/releases/stable/windows/flutter_windows_v1.0.0-stable.zip;每次更新最新版本  
   2.解压缩zip文件D:\soft\flutter位置，然后配置系统环境变量Path，添加一条D:\soft\flutter\bin；在用户环境变量中添加两个变量：export PUB_HOSTED_URL=https://pub.flutter-io.cn 和 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn（谷歌原域名=googleapis.com；flutter-io.cn为中国区准备的；或者用上海交大的站点FLUTTER_STORAGE_BASE_URL: https://mirrors.sjtug.sjtu.edu.cn/和PUB_HOSTED_URL: https://dart-pub.mirrors.sjtug.sjtu.edu.cn/  
   3.在cmd或者双击flutter_console.bat进入命令行flutter来初始化。该命令需要联网，上面两个url环境变量会关联上  

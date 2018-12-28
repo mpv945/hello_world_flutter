@@ -1,6 +1,32 @@
 import 'package:flutter/material.dart';
+// english_words其中包含数千个最常用的英文单词以及一些实用功能
+import 'package:english_words/english_words.dart';//如果未使用会提升波浪下划线
+//void main() => runApp(MyApp());
+void main() => runApp(TestApp());
 
-void main() => runApp(MyApp());
+class TestApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final wordPair = new WordPair.random();//随机文字
+    // TODO: 重新该方法
+    //return null;
+    return MaterialApp(
+      title: '欢迎来到我的第一个flutter app',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('我的第一个flutter app'),
+        ),
+        body: Center(
+          //child: Text('你好，我叫海军'),
+          //驼峰命名法” (称为 “upper camel case” 或 “Pascal case” ), 表示字符串中的每个单词（包括第一个单词）
+          //都以大写字母开头。所以，“uppercamelcase” 变成 “UpperCamelCase”
+          child: new Text(wordPair.asPascalCase),
+        ),
+      ),
+    );
+  }
+  
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
